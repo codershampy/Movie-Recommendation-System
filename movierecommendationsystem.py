@@ -1,5 +1,4 @@
-Importing the dependencies
-"""
+#Importing the dependencies
 
 import numpy as np
 import pandas as pd
@@ -7,7 +6,7 @@ import difflib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-"""Data Collection and Pre-Processing"""
+#Data Collection and Pre-Processing
 
 # loading the data from the csv file to pandas dataframe
 movies_data = pd.read_csv('/content/movie.csv')
@@ -41,7 +40,7 @@ feature_vectors = vectorizer.fit_transform(combined_features)
 
 print(feature_vectors)
 
-"""Cosine Similarity"""
+#Cosine Similarity
 
 # getting the similarity scores using cosine similarity
 
@@ -97,7 +96,7 @@ for movie in sorted_similar_movies:
     print(i,'.',title_from_index)
     i+=1
 
-"""Movie Recommendation System"""
+#Movie Recommendation System
 
 movie_name = input(' Enter your favourite movie name :')
 
